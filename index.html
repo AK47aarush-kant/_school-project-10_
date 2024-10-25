@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Arnold's Convent School</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        .hero {
+            background: url("D:\school.jpg")no-repeat center center/cover;
+            height: 400px;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+        }
+
+        .marquee {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .grid-item {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #4CAF50;
+            color: white;
+        }
+
+        .socials {
+            margin-top: 10px;
+        }
+
+        .socials a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #4CAF50;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>St. Arnold's Convent School</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#academics">Academics</a>
+            <a href="#activities">Activities</a>
+            <a href="#contact">Contact Us</a>
+            <a href="D:\admisson_form.html">Admissions</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+		<IMG SRC="D:\school.jpg">
+        <h1>Welcome to St. Arnold's Convent School</h1>
+    </div>
+
+    <div class="marquee">
+        <marquee>?? "Upcoming Events: Fourth unit test (1-8) & Tearm-3 (9-10) from Nov 11th!-18th!", "Science and Art exbition on Oct 26th!" ??</marquee>
+    </div>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>St. Arnold's Convent School has been dedicated to providing quality education since its establishment. Our mission is to foster academic excellence, personal growth, and a sense of responsibility among our students.</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="D:\school 2.jpeg">
+                    <p>Our School Building</p>
+                </div>
+                <div class="grid-item">
+                    <img src="D:\library.jpg">
+                    <p>Our Library</p>
+                </div>
+                <div class="grid-item">
+                    <img src="D:\classroom.jpeg">
+                    <p>Classroom Activities</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="academics">
+            <h2>Academics</h2>
+            <p>We offer a comprehensive curriculum designed to promote critical thinking and creativity.</p>
+        </section>
+
+        <section id="activities">
+            <h2>Extracurricular Activities</h2>
+            <p>Our school encourages students to participate in various extracurricular activities to enhance their skills and talents.</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="D:\sport.jpeg">
+                    <p>Sports Activities</p>
+                </div>
+                <div class="grid-item">
+                    <img src="D:\music.png">
+                    <p>Music Classes</p>
+                </div>
+                <div class="grid-item">
+                    <img src="D:\drama.jpg">
+                    <p>Drama Club</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information, please reach out to us!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+            <address>
+                <strong>Email:</strong> <a href="mailto:arnoldsconvent@gmail.com">arnoldsconvent@gmail.com</a><br>
+                <strong>Phone:</strong> <a href="tel:+06645-272490">+06645-272490</a><br>
+                <strong>Address:</strong> Cox colony, Jharsugudua, Odisha
+            </address>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 St. Arnold's Convent School. All rights reserved.</p>
+        <div class="socials">
+            <a href="#" title="Facebook">&#x1F5A8;</a>
+            <a href="#" title="Twitter">&#x1F5A9;</a>
+            <a href="#" title="Instagram">&#x1F5AB;</a>
+            <a href="#" title="LinkedIn">&#x1F5A7;</a>
+        </div>
+    </footer>
+</body>
+
+</html>
