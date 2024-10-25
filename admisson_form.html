@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - St. Arnold's Convent School</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+
+        .important-dates {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .important-dates li {
+            margin: 10px 0;
+            background: #e7f3fe;
+            padding: 10px;
+            border-left: 4px solid #2196F3;
+        }
+
+        .criteria, .process {
+            margin-top: 20px;
+        }
+
+        .criteria ul, .process ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #4CAF50;
+            color: white;
+        }
+
+        .socials a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Admissions - St. Arnold's Convent School</h1>
+        <nav>
+            <a href="G:\last.html">Home</a>
+            <a href="#criteria">Admission Criteria</a>
+            <a href="#process">Admission Process</a>
+            <a href="#dates">Important Dates</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="criteria" class="criteria">
+        <h2>Admission Criteria</h2>
+        <p>We welcome applications for students from Kindergarten to Grade 10. Below are the admission criteria:</p>
+        <ul>
+            <li>Age Requirements: Students must meet the minimum age requirement for their respective grade level.</li>
+            <li>Previous Academic Records: Submission of previous school records and report cards.</li>
+            <li>Entrance Test: An entrance test may be required for certain grades.</li>
+            <li>Personal Interview: A personal interview with the student and parent may be scheduled.</li>
+        </ul>
+    </section>
+
+    <section id="process" class="process">
+        <h2>Admission Process</h2>
+        <p>Follow these steps to apply for admission:</p>
+        <ol>
+            <li>Complete the online application form.</li>
+            <li>Submit required documents (birth certificate, report cards, etc.).</li>
+            <li>Pay the application fee.</li>
+            <li>Attend the entrance test (if applicable).</li>
+            <li>Participate in the personal interview.</li>
+            <li>Receive admission decision via email.</li>
+        </ol>
+    </section>
+
+    <section id="dates" class="important-dates">
+        <h2>Important Dates</h2>
+        <ul>
+            <li>Application Open: January 15, 2025</li>
+            <li>Application Deadline: March 15, 2025</li>
+            <li>Entrance Test Date: March 25, 2025</li>
+            <li>Interview Dates: April 1-5, 2025</li>
+            <li>Admission Notification: April 10, 2025</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance with the admissions process, please fill out the form below:</p>
+        <div class="form-container">
+            <form action="submit_admission.php" method="post">
+                <input type="text" name="fullName" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="phone" placeholder="Phone Number" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 St. Arnold's Convent School. All rights reserved.</p>
+        <div class="socials">
+            <a href="#" title="Facebook">&#x1F5A8;</a>
+            <a href="#" title="Twitter">&#x1F5A9;</a>
+            <a href="#" title="Instagram">&#x1F5AB;</a>
+            <a href="#" title="LinkedIn">&#x1F5A7;</a>
+        </div>
+    </footer>
+</body>
+
+</html>
